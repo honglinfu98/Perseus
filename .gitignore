@@ -134,7 +134,7 @@ dmypy.json
 
 #Playground
 development/
-data/
+saved/
 venv
 .env
 .DS_Store
