@@ -31,17 +31,19 @@ export $(cat .env | xargs)
 ### For running 
 Download the dataset COSS_data.pkl, DDINA_data.pkl, DDM_data.pkl, test_signals.pkl, train_signals.pkl, validate_signals.pkl.
 
+Prepare Dataset
+
+```
+cd src/perseus/dataset
+python dataset_preparation
+
+```
+
 Run experiments
 
 ```
 cd src/perseus/evaluation
-python run_experiments.py
-```
-
-Plot experiments results 
-```
-cd src/perseus/scripts/plot
-python plot_results.py
+python run_fusion_experiments.py
 ```
 
 
